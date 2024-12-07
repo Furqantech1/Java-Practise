@@ -123,3 +123,166 @@
 
 
 
+#  09> sort Tuples
+
+# def sort_tuples(tuples):
+#     # Sorting the tuples by name, then by age, and finally by score (height)
+#     sorted_tuples = sorted(tuples, key=lambda x: (x[0], int(x[1]), int(x[2])))
+#     return sorted_tuples
+
+# def main():
+#     # Taking input from the console
+#     num_entries = int(input("Enter number of entries: "))
+#     tuples = []
+    
+#     for _ in range(num_entries):
+#         entry = input("Enter name, age, height separated by commas: ").split(',')
+#         tuples.append(tuple(entry))
+    
+#     # Sorting the tuples
+#     sorted_tuples = sort_tuples(tuples)
+    
+#     print("Sorted tuples:", sorted_tuples)
+
+# if __name__ == "__main__":
+#     main()
+
+
+#  10> Generate Squares
+
+# def generate_squares():
+#     # Generating a list of squares of numbers from 1 to 20
+#     squares = [x**2 for x in range(1, 21)]
+#     # Printing all elements except the first 5
+#     print(squares[2:])
+
+# generate_squares()
+
+
+#  11> Count upper and lower case
+
+# def count_letters(sentence):
+#     upper_case_count = 0
+#     lower_case_count = 0
+
+#     for char in sentence:
+#         if char.isupper():
+#             upper_case_count += 1
+#         elif char.islower():
+#             lower_case_count += 1
+
+#     print("UPPER CASE", upper_case_count)
+#     print("LOWER CASE", lower_case_count)
+
+# # Input sentence
+# sentence = input("Enter a sentence: ")
+# count_letters(sentence)
+
+
+#  12> Square root of [(2 * C * D)/H]
+
+# import math
+
+# def calculate_Q(D_values):
+#     C = 50
+#     H = 30
+#     Q_values = []
+    
+#     for D in D_values:
+#         Q = math.sqrt((2 * C * int(D)) / H)
+#         Q_values.append(int(Q))  # appending the integer value of Q
+    
+#     return Q_values
+
+# def main():
+#     # Input the values of D as a comma-separated sequence
+#     D_input = input("Enter comma-separated values for D: ")
+#     D_values = D_input.split(',')
+    
+#     # Calculate and print the Q values
+#     Q_values = calculate_Q(D_values)
+#     print("Output values:", ",".join(map(str, Q_values)))
+
+# if __name__ == "__main__":
+#     main()
+
+
+#  13> Creating a class in python
+
+# import math
+
+# class Shape:
+#     def area(self):
+#         pass
+    
+#     def perimeter(self):
+#         pass
+
+# class Circle(Shape):
+#     def __init__(self, radius):
+#         self.radius = radius
+        
+#     def area(self):
+#         return math.pi * self.radius ** 2
+    
+#     def perimeter(self):
+#         return 2 * math.pi * self.radius
+
+# class Square(Shape):
+#     def __init__(self, side_length):
+#         self.side_length = side_length
+    
+#     def area(self):
+#         return self.side_length ** 2
+    
+#     def perimeter(self):
+#         return 4 * self.side_length
+
+# class Triangle(Shape):
+#     def __init__(self, side1, side2, side3):
+#         self.side1 = side1
+#         self.side2 = side2
+#         self.side3 = side3
+    
+#     def area(self):
+#         s = (self.side1 + self.side2 + self.side3) / 2
+#         return math.sqrt(s * (s - self.side1) * (s - self.side2) * (s - self.side3))
+    
+#     def perimeter(self):
+#         return self.side1 + self.side2 + self.side3
+
+# # Example usage:
+# circle = Circle(5)
+# print("Circle area:", circle.area())
+# print("Circle perimeter:", circle.perimeter())
+
+# square = Square(4)
+# print("Square area:", square.area())
+# print("Square perimeter:", square.perimeter())
+
+# triangle = Triangle(3, 4, 5)
+# print("Triangle area:", triangle.area())
+# print("Triangle perimeter:", triangle.perimeter())
+
+
+
+#  14> Creating square dictionary
+
+
+# def generate_square_dict(n):
+#     # Create a dictionary with (i, i*i) pairs
+#     square_dict = {i: i*i for i in range(1, n+1)}
+#     return square_dict
+
+# def main():
+#     # Input the integral number 'n'
+#     n = int(input("Enter an integral number: "))
+    
+#     # Generate the dictionary
+#     result = generate_square_dict(n)
+    
+#     # Print the dictionary
+#     print(result)
+
+# if __name__ == "__main__":
+#     main()
